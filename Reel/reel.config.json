@@ -1,0 +1,564 @@
+{
+  "_help": "ONE FILE FOR ALL GLOBAL SETTINGS. Edit here, or override per run: CLI (node build.mjs --type terminal --theme dracula --voice-speed 1.1), env (REEL_TYPE=terminal VOICE_NAME=am_adam) or the generic  --set section.key=value  (repeatable, e.g. --set typing.cps=0.03 --set walkthrough.fontSize=26). Precedence: CLI > env > build.mjs > this file. Content (what the video says) stays in build.mjs; everything about how it looks/sounds is here.",
+  "channel": "Coding Archives",
+  "reel": {
+    "_help": "THE MAIN SWITCHES. type = which kind of reel (a preset from 'reelTypes' below). language = key of 'languages'. theme = key of 'themes'. layout = 'auto' (the reel type decides) or a key of layout.presets. CLI: --type walkthrough --lang javascript --theme dracula --layout tall",
+    "type": "methods",
+    "language": "python",
+    "theme": "vscode-dark",
+    "layout": "auto"
+  },
+  "reelTypes": {
+    "_help": "Presets chosen by reel.type. scene = default scene type for entries in steps[] that do not set their own 'type' (scene types: method code concept compare tip walkthrough flow blocks terminal). intro/outro = grid | card | off. Add your own presets here (e.g. a 'linux-tips' that uses scene 'terminal'). Every scene can still override 'type' inside build.mjs, so one reel can mix scene types.",
+    "methods": {
+      "label": "Methods / API cheat sheet (code + before/after + terminal)",
+      "scene": "method",
+      "layout": "classic",
+      "intro": "grid",
+      "outro": "grid",
+      "stepLabel": "METHOD",
+      "countLabel": "methods"
+    },
+    "code": {
+      "label": "Code + output examples",
+      "scene": "code",
+      "layout": "tall",
+      "intro": "card",
+      "outro": "card",
+      "stepLabel": "EXAMPLE",
+      "countLabel": "examples"
+    },
+    "concept": {
+      "label": "Explain a concept (points + code example)",
+      "scene": "concept",
+      "layout": "tall",
+      "intro": "card",
+      "outro": "card",
+      "stepLabel": "CONCEPT",
+      "countLabel": "ideas"
+    },
+    "compare": {
+      "label": "Comparison: A vs B (code panels or feature table)",
+      "scene": "compare",
+      "layout": "tall",
+      "intro": "card",
+      "outro": "card",
+      "stepLabel": "VERSUS",
+      "countLabel": "differences"
+    },
+    "tips": {
+      "label": "Tips & tricks: instead of this -> do this",
+      "scene": "tip",
+      "layout": "tall",
+      "intro": "card",
+      "outro": "card",
+      "stepLabel": "TIP",
+      "countLabel": "tips"
+    },
+    "walkthrough": {
+      "label": "Long code: files, functions, scroll bar, highlighted ranges",
+      "scene": "walkthrough",
+      "layout": "tall",
+      "intro": "card",
+      "outro": "card",
+      "stepLabel": "PART",
+      "countLabel": "parts"
+    },
+    "flowchart": {
+      "label": "Flowchart (decisions, loops, animated trace)",
+      "scene": "flow",
+      "layout": "tall",
+      "intro": "card",
+      "outro": "card",
+      "stepLabel": "FLOW",
+      "countLabel": "flows"
+    },
+    "blocks": {
+      "label": "Block diagram (pipelines, memory, architecture)",
+      "scene": "blocks",
+      "layout": "tall",
+      "intro": "card",
+      "outro": "card",
+      "stepLabel": "DIAGRAM",
+      "countLabel": "diagrams"
+    },
+    "terminal": {
+      "label": "Linux / shell commands with real terminal output",
+      "scene": "terminal",
+      "layout": "tall",
+      "language": "bash",
+      "intro": "card",
+      "outro": "grid",
+      "stepLabel": "COMMAND",
+      "countLabel": "commands"
+    },
+    "mixed": {
+      "label": "Anything goes: set 'type' on every step",
+      "scene": "concept",
+      "layout": "tall",
+      "intro": "card",
+      "outro": "card",
+      "stepLabel": "PART",
+      "countLabel": "parts"
+    }
+  },
+  "languages": {
+    "_help": "Per language: label (shown in thumbnails), ext (file extension), syntax (highlighter grammar: python javascript bash java c go rust sql json generic), color (tab icon: one colour or two for a diagonal split), status (status-bar text), run (command used to execute snippets so the output is REAL; {file}=script path, {dir}=scratch folder; null = you must supply 'out' yourself), prompt (shown before the output; {file}), keywords (extra words to highlight). Add any language by copying a block.",
+    "python": {
+      "label": "Python",
+      "ext": "py",
+      "syntax": "python",
+      "color": [
+        "#3776ab",
+        "#ffd43b"
+      ],
+      "status": "Python 3.12",
+      "run": "python3 -E -s {file}",
+      "prompt": "$ python {file}"
+    },
+    "javascript": {
+      "label": "JavaScript",
+      "ext": "js",
+      "syntax": "javascript",
+      "color": [
+        "#f7df1e"
+      ],
+      "status": "Node.js",
+      "run": "node {file}",
+      "prompt": "$ node {file}"
+    },
+    "typescript": {
+      "label": "TypeScript",
+      "ext": "ts",
+      "syntax": "javascript",
+      "color": [
+        "#3178c6"
+      ],
+      "status": "TypeScript",
+      "run": "node --experimental-strip-types --no-warnings {file}",
+      "prompt": "$ npx tsx {file}"
+    },
+    "bash": {
+      "label": "Linux",
+      "ext": "sh",
+      "syntax": "bash",
+      "color": [
+        "#4eaa25"
+      ],
+      "status": "Bash",
+      "run": "bash {file}",
+      "prompt": "$ bash {file}"
+    },
+    "java": {
+      "label": "Java",
+      "ext": "java",
+      "syntax": "java",
+      "color": [
+        "#e76f00"
+      ],
+      "status": "Java 21",
+      "run": "java {file}",
+      "prompt": "$ java {file}"
+    },
+    "c": {
+      "label": "C",
+      "ext": "c",
+      "syntax": "c",
+      "color": [
+        "#5c6bc0"
+      ],
+      "status": "C (gcc)",
+      "run": "gcc {file} -o {dir}/prog && {dir}/prog",
+      "prompt": "$ gcc {file} && ./a.out"
+    },
+    "cpp": {
+      "label": "C++",
+      "ext": "cpp",
+      "syntax": "c",
+      "color": [
+        "#00599c"
+      ],
+      "status": "C++17",
+      "run": "g++ -std=c++17 {file} -o {dir}/prog && {dir}/prog",
+      "prompt": "$ g++ {file} && ./a.out"
+    },
+    "go": {
+      "label": "Go",
+      "ext": "go",
+      "syntax": "go",
+      "color": [
+        "#00add8"
+      ],
+      "status": "Go",
+      "run": "go run {file}",
+      "prompt": "$ go run {file}"
+    },
+    "rust": {
+      "label": "Rust",
+      "ext": "rs",
+      "syntax": "rust",
+      "color": [
+        "#dea584"
+      ],
+      "status": "Rust",
+      "run": "rustc {file} -o {dir}/prog && {dir}/prog",
+      "prompt": "$ cargo run"
+    },
+    "sql": {
+      "label": "SQL",
+      "ext": "sql",
+      "syntax": "sql",
+      "color": [
+        "#e38c00"
+      ],
+      "status": "SQL",
+      "run": null,
+      "prompt": "> result"
+    },
+    "json": {
+      "label": "JSON",
+      "ext": "json",
+      "syntax": "json",
+      "color": [
+        "#cbcb41"
+      ],
+      "status": "JSON",
+      "run": null,
+      "prompt": "> result"
+    }
+  },
+  "themes": {
+    "_help": "Colours. 'syntax' maps token classes: k keyword, s string, n number, f function/call, v name, o operator, c comment, t type/class, fl flag (shell), d decorator. cell*/hit/del/new colours are used by the before/after rows and the diagram nodes.",
+    "vscode-dark": {
+      "bg": "#1e1e1e",
+      "panel": "#252526",
+      "term": "#181818",
+      "line": "#2d2d2d",
+      "fg": "#d4d4d4",
+      "muted": "#9aa0a6",
+      "dim": "#858585",
+      "accent": "#007acc",
+      "accentText": "#4fc1ff",
+      "teal": "#4ec9b0",
+      "yellow": "#ffd43b",
+      "red": "#f48771",
+      "green": "#6a9955",
+      "blue": "#569cd6",
+      "purple": "#c586c0",
+      "orange": "#ce9178",
+      "cell": "#252526",
+      "cellBorder": "#454545",
+      "hitBg": "#3a3520",
+      "delBg": "#3a1f1f",
+      "newBg": "#1f3a36",
+      "syntax": {
+        "v": "#9cdcfe",
+        "o": "#d4d4d4",
+        "n": "#b5cea8",
+        "s": "#ce9178",
+        "f": "#dcdcaa",
+        "k": "#569cd6",
+        "c": "#6a9955",
+        "t": "#4ec9b0",
+        "fl": "#c586c0",
+        "d": "#dcdcaa"
+      }
+    },
+    "one-dark": {
+      "bg": "#282c34",
+      "panel": "#21252b",
+      "term": "#1b1d23",
+      "line": "#333842",
+      "fg": "#abb2bf",
+      "muted": "#8b93a1",
+      "dim": "#6b7280",
+      "accent": "#528bff",
+      "accentText": "#7aa2ff",
+      "teal": "#56b6c2",
+      "yellow": "#e5c07b",
+      "red": "#e06c75",
+      "green": "#98c379",
+      "blue": "#61afef",
+      "purple": "#c678dd",
+      "orange": "#d19a66",
+      "cell": "#21252b",
+      "cellBorder": "#4b5263",
+      "hitBg": "#3b3626",
+      "delBg": "#3d2529",
+      "newBg": "#24382f",
+      "syntax": {
+        "v": "#e06c75",
+        "o": "#abb2bf",
+        "n": "#d19a66",
+        "s": "#98c379",
+        "f": "#61afef",
+        "k": "#c678dd",
+        "c": "#5c6370",
+        "t": "#e5c07b",
+        "fl": "#56b6c2",
+        "d": "#e5c07b"
+      }
+    },
+    "dracula": {
+      "bg": "#282a36",
+      "panel": "#21222c",
+      "term": "#191a21",
+      "line": "#343746",
+      "fg": "#f8f8f2",
+      "muted": "#a4a8c0",
+      "dim": "#6272a4",
+      "accent": "#bd93f9",
+      "accentText": "#d6bcff",
+      "teal": "#8be9fd",
+      "yellow": "#f1fa8c",
+      "red": "#ff5555",
+      "green": "#50fa7b",
+      "blue": "#8be9fd",
+      "purple": "#bd93f9",
+      "orange": "#ffb86c",
+      "cell": "#21222c",
+      "cellBorder": "#44475a",
+      "hitBg": "#3b3d2a",
+      "delBg": "#40262b",
+      "newBg": "#1f3a30",
+      "syntax": {
+        "v": "#f8f8f2",
+        "o": "#ff79c6",
+        "n": "#bd93f9",
+        "s": "#f1fa8c",
+        "f": "#50fa7b",
+        "k": "#ff79c6",
+        "c": "#6272a4",
+        "t": "#8be9fd",
+        "fl": "#ffb86c",
+        "d": "#50fa7b"
+      }
+    },
+    "midnight": {
+      "bg": "#0d1117",
+      "panel": "#161b22",
+      "term": "#010409",
+      "line": "#21262d",
+      "fg": "#c9d1d9",
+      "muted": "#8b949e",
+      "dim": "#6e7681",
+      "accent": "#1f6feb",
+      "accentText": "#58a6ff",
+      "teal": "#3fb950",
+      "yellow": "#e3b341",
+      "red": "#ff7b72",
+      "green": "#3fb950",
+      "blue": "#79c0ff",
+      "purple": "#d2a8ff",
+      "orange": "#ffa657",
+      "cell": "#161b22",
+      "cellBorder": "#30363d",
+      "hitBg": "#2f2a14",
+      "delBg": "#3a1a1a",
+      "newBg": "#12301f",
+      "syntax": {
+        "v": "#c9d1d9",
+        "o": "#ff7b72",
+        "n": "#79c0ff",
+        "s": "#a5d6ff",
+        "f": "#d2a8ff",
+        "k": "#ff7b72",
+        "c": "#8b949e",
+        "t": "#ffa657",
+        "fl": "#d2a8ff",
+        "d": "#d2a8ff"
+      }
+    }
+  },
+  "layout": {
+    "_help": "Frame geometry in px (frame is 1080x1920; keep key content between y 285 and ~1500 so platform UI never covers it). preset 'classic' = original look: code stage, fixed TERMINAL panel, caption, faded code texture. 'tall' = taller stage (no fixed terminal panel; scenes draw their own), caption under the stage. Make your own preset by copying one. headerCompact is used by scenes that need more height.",
+    "margin": 108,
+    "deco": true,
+    "presets": {
+      "classic": {
+        "stageBottom": 1000,
+        "term": {
+          "top": 1006,
+          "height": 200
+        },
+        "capsTop": 1214,
+        "decoTop": 1330,
+        "decoHeight": 506
+      },
+      "tall": {
+        "stageBottom": 1262,
+        "term": null,
+        "capsTop": 1276,
+        "decoTop": 1410,
+        "decoHeight": 426
+      }
+    }
+  },
+  "captions": {
+    "_help": "Burned-in captions (the SRT file is always written). mode: 'speech' = the captions show EVERYTHING the voice says, chunked into short phrases and timed to the voice; 'cap' = only the short cap:[..] lines you write in build.mjs. maxChars = longest phrase on screen. fontSize/lineHeight px. enabled=false hides them in the video.",
+    "enabled": true,
+    "mode": "speech",
+    "maxChars": 52,
+    "fontSize": 48,
+    "lineHeight": 58
+  },
+  "typing": {
+    "_help": "Typing animation: cps = seconds per character, minLine = shortest time for one line, gap = pause between lines.",
+    "cps": 0.04,
+    "minLine": 0.45,
+    "gap": 0.18
+  },
+  "timing": {
+    "_help": "Minimum scene lengths in seconds (the voiceover can lengthen them). beat = one narrated sub-step inside a long scene.",
+    "intro": 4.5,
+    "step": 6,
+    "outro": 5.5,
+    "beat": 4.2
+  },
+  "execute": {
+    "_help": "Snippets are RUN so on-screen output is real. enabled=false: you must give 'out' on every scene. timeoutSec per run. Scenes can opt out with run:false or give their own out:[...]. Shell scenes only run commands that you mark run:true.",
+    "enabled": true,
+    "timeoutSec": 20
+  },
+  "walkthrough": {
+    "_help": "Long-code scenes: fontSize px, lineHeight ratio, scrollSeconds = scroll animation time, scrollbar = show the scroll bars, dim = how dark the lines outside the highlighted range get (0-1), maxOutLines = terminal lines shown. panelMargin = px between the screen edge and the code panel.",
+    "fontSize": 28,
+    "lineHeight": 1.55,
+    "scrollSeconds": 0.8,
+    "scrollbar": true,
+    "dim": 0.62,
+    "maxOutLines": 5,
+    "panelMargin": 72
+  },
+  "diagram": {
+    "_help": "Flowchart / block scenes: fontSize px, nodeGapX / nodeGapY px between nodes, strokeWidth, trace = animate a glowing token along 'trace' paths, edgeSeconds = time to draw one arrow. maxScale = how much a small diagram may be enlarged to use the space (1 = never).",
+    "fontSize": 30,
+    "nodeGapX": 56,
+    "nodeGapY": 74,
+    "strokeWidth": 3,
+    "trace": true,
+    "edgeSeconds": 0.45,
+    "maxScale": 1.35
+  },
+  "terminal": {
+    "_help": "Linux terminal scenes: user/host/cwd form the prompt; fontSize px; windowTitle shown in the title bar ('' = user@host: cwd); lineHeight ratio; anatomy = show the chip row that explains each part of a command.",
+    "user": "coder",
+    "host": "linux",
+    "cwd": "~",
+    "fontSize": 30,
+    "lineHeight": 1.5,
+    "anatomy": true
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "logo": {
+    "_help": "Channel logo shown for the whole video. anchor: top-left|top-center|top-right|center-left|center|center-right|bottom-left|bottom-center|bottom-right. x,y = px moved inward from that corner. width = logo width in px (height follows). Frame is 1080x1920.  CLI: --logo off | --logo-width 240",
+    "enabled": true,
+    "file": "assets/logo.png",
+    "anchor": "top-right",
+    "x": 36,
+    "y": 22,
+    "width": 300,
+    "opacity": 1.0
+  },
+  "watermark": {
+    "_help": "Text watermark across the screen. fontSize px, opacity 0-1, rotate deg (negative = rising to the right). anchor/x/y as for logo. tile:true repeats it over the whole frame (tileGapX/tileGapY px). CLI: --watermark off | --watermark-opacity 0.1",
+    "enabled": true,
+    "text": "Coding Archives",
+    "anchor": "center",
+    "x": 0,
+    "y": 0,
+    "fontSize": 150,
+    "letterSpacing": -2,
+    "rotate": -28,
+    "opacity": 0.07,
+    "color": "#ffffff",
+    "tile": false,
+    "tileGapX": 560,
+    "tileGapY": 420
+  },
+  "thumbnail": {
+    "enabled": true,
+    "style": "editor",
+    "_style_options": "editor blueprint poster terminal cells q_quiz q_exam q_count q_bug q_versus sticky neon swiss levels chalk  |  all (renders every style + a contact sheet)",
+    "endCard": {
+      "enabled": true,
+      "seconds": 1.0,
+      "_help": "The chosen thumbnail is shown full-screen as the last frame(s) of the video. CLI: --end-card off | --end-card-seconds 1.5. With style 'all' the first rendered style is used."
+    }
+  },
+  "voice": {
+    "enabled": true,
+    "provider": "kokoro",
+    "_provider_options": "kokoro = real Kokoro-82M TTS (needs setup.sh) | mock = placeholder tones with realistic timing, for layout tests | none = no voiceover",
+    "voice": "af_heart",
+    "_voice_examples": "af_heart af_bella af_nova af_sky am_adam am_michael bf_emma bm_george  (54 voices; run: node build.mjs --list-voices)",
+    "speed": 1.0,
+    "lang": "en-us",
+    "volume": 1.0,
+    "padSeconds": 0.5,
+    "python": "",
+    "backend": "auto"
+  },
+  "sound": {
+    "_help": "Final volume of a sound = master x sfx.volume x category.volume (1.0 = the file's own level). Voice volume = master x voice.volume. Env: SFX=0, SFX_MASTER=0.5, SFX_TYPING=0 or 0.3 (any category), VOICE=0, VOICE_VOLUME=0.8.",
+    "master": 0.8,
+    "sfx": {
+      "enabled": true,
+      "volume": 1.0,
+      "categories": {
+        "typing": {
+          "enabled": true,
+          "volume": 0.9,
+          "file": "assets/sfx/typing.wav",
+          "use": "code lines being typed"
+        },
+        "enter": {
+          "enabled": true,
+          "volume": 0.7,
+          "file": "assets/sfx/enter.wav",
+          "use": "terminal run (Enter key)"
+        },
+        "whoosh": {
+          "enabled": true,
+          "volume": 0.45,
+          "file": "assets/sfx/whoosh.wav",
+          "use": "titles and scenes sliding in"
+        },
+        "swap": {
+          "enabled": true,
+          "volume": 0.55,
+          "file": "assets/sfx/swap.wav",
+          "use": "rows moving / changing"
+        },
+        "pop": {
+          "enabled": true,
+          "volume": 0.5,
+          "file": "assets/sfx/pop.wav",
+          "use": "a new row appearing"
+        },
+        "tick": {
+          "enabled": true,
+          "volume": 0.3,
+          "file": "assets/sfx/tick.wav",
+          "use": "small staggered items, terminal output"
+        },
+        "ding": {
+          "enabled": true,
+          "volume": 0.4,
+          "file": "assets/sfx/ding.wav",
+          "use": "success: new item, result, call to action"
+        },
+        "thud": {
+          "enabled": true,
+          "volume": 0.5,
+          "file": "assets/sfx/thud.wav",
+          "use": "an item being removed"
+        }
+      }
+    }
+  }
+}
