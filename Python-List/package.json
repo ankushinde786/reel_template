@@ -1,0 +1,19 @@
+{
+  "name": "coding-archives-reel-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vertical 9:16 coding reels: write one build.mjs per topic; voiceover (Kokoro), SFX, captions and thumbnail are generated.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "setup": "bash setup.sh",
+    "build": "node build.mjs",
+    "build:render": "node build.mjs --render",
+    "thumbs": "node build.mjs --voice off --thumb all",
+    "voices": "node build.mjs --list-voices",
+    "example:tuples": "node examples/tuples.build.mjs",
+    "frame": "node tools/frame.mjs",
+    "check": "cd out/list-methods && npx hyperframes check",
+    "render:hf": "cd out/list-methods && npx hyperframes render"
+  }
+}

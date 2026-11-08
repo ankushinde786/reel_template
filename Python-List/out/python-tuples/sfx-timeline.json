@@ -1,0 +1,544 @@
+{
+ "duration": 46.9,
+ "events": [
+  {
+   "kind": "whoosh",
+   "t": 0,
+   "dur": 0.55,
+   "vol": 0.36,
+   "file": "/home/claude/reel-kit/assets/sfx/whoosh.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 0.4,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 0.49,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 0.58,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 0.67,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 0.76,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 0.85,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 0.94,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "whoosh",
+   "t": 4.5,
+   "dur": 0.55,
+   "vol": 0.36,
+   "file": "/home/claude/reel-kit/assets/sfx/whoosh.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 4.9,
+   "dur": 1.32,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "pop",
+   "t": 6.32,
+   "dur": 0.16,
+   "vol": 0.4,
+   "file": "/home/claude/reel-kit/assets/sfx/pop.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 6.4,
+   "dur": 0.52,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "ding",
+   "t": 7.07,
+   "dur": 0.9,
+   "vol": 0.32,
+   "file": "/home/claude/reel-kit/assets/sfx/ding.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 7.1,
+   "dur": 0.72,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "enter",
+   "t": 7.94,
+   "dur": 0.18,
+   "vol": 0.56,
+   "file": "/home/claude/reel-kit/assets/sfx/enter.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 8.29,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "whoosh",
+   "t": 10.5,
+   "dur": 0.55,
+   "vol": 0.36,
+   "file": "/home/claude/reel-kit/assets/sfx/whoosh.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 10.9,
+   "dur": 1.32,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "pop",
+   "t": 12.32,
+   "dur": 0.16,
+   "vol": 0.4,
+   "file": "/home/claude/reel-kit/assets/sfx/pop.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 12.4,
+   "dur": 0.64,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "ding",
+   "t": 13.19,
+   "dur": 0.9,
+   "vol": 0.32,
+   "file": "/home/claude/reel-kit/assets/sfx/ding.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 13.19,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 13.22,
+   "dur": 0.68,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "enter",
+   "t": 14.02,
+   "dur": 0.18,
+   "vol": 0.56,
+   "file": "/home/claude/reel-kit/assets/sfx/enter.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 14.37,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "whoosh",
+   "t": 16.5,
+   "dur": 0.55,
+   "vol": 0.36,
+   "file": "/home/claude/reel-kit/assets/sfx/whoosh.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 16.9,
+   "dur": 0.76,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "pop",
+   "t": 17.76,
+   "dur": 0.16,
+   "vol": 0.4,
+   "file": "/home/claude/reel-kit/assets/sfx/pop.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 17.84,
+   "dur": 0.45,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "swap",
+   "t": 18.44,
+   "dur": 0.32,
+   "vol": 0.44,
+   "file": "/home/claude/reel-kit/assets/sfx/swap.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 18.44,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 18.47,
+   "dur": 0.45,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "ding",
+   "t": 18.64,
+   "dur": 0.9,
+   "vol": 0.32,
+   "file": "/home/claude/reel-kit/assets/sfx/ding.wav"
+  },
+  {
+   "kind": "enter",
+   "t": 19.04,
+   "dur": 0.18,
+   "vol": 0.56,
+   "file": "/home/claude/reel-kit/assets/sfx/enter.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 19.39,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "whoosh",
+   "t": 22.5,
+   "dur": 0.55,
+   "vol": 0.36,
+   "file": "/home/claude/reel-kit/assets/sfx/whoosh.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 22.9,
+   "dur": 0.88,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "pop",
+   "t": 23.88,
+   "dur": 0.16,
+   "vol": 0.4,
+   "file": "/home/claude/reel-kit/assets/sfx/pop.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 23.96,
+   "dur": 0.68,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "ding",
+   "t": 24.79,
+   "dur": 0.9,
+   "vol": 0.32,
+   "file": "/home/claude/reel-kit/assets/sfx/ding.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 24.79,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 24.82,
+   "dur": 0.45,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "enter",
+   "t": 25.39,
+   "dur": 0.18,
+   "vol": 0.56,
+   "file": "/home/claude/reel-kit/assets/sfx/enter.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 25.74,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "whoosh",
+   "t": 28.5,
+   "dur": 0.55,
+   "vol": 0.36,
+   "file": "/home/claude/reel-kit/assets/sfx/whoosh.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 28.9,
+   "dur": 0.64,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "pop",
+   "t": 29.64,
+   "dur": 0.16,
+   "vol": 0.4,
+   "file": "/home/claude/reel-kit/assets/sfx/pop.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 29.72,
+   "dur": 0.48,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "swap",
+   "t": 30.35,
+   "dur": 0.32,
+   "vol": 0.44,
+   "file": "/home/claude/reel-kit/assets/sfx/swap.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 30.38,
+   "dur": 0.45,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "ding",
+   "t": 30.55,
+   "dur": 0.9,
+   "vol": 0.32,
+   "file": "/home/claude/reel-kit/assets/sfx/ding.wav"
+  },
+  {
+   "kind": "enter",
+   "t": 30.95,
+   "dur": 0.18,
+   "vol": 0.56,
+   "file": "/home/claude/reel-kit/assets/sfx/enter.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 31.3,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "whoosh",
+   "t": 34.5,
+   "dur": 0.55,
+   "vol": 0.36,
+   "file": "/home/claude/reel-kit/assets/sfx/whoosh.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 34.9,
+   "dur": 1,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "pop",
+   "t": 36,
+   "dur": 0.16,
+   "vol": 0.4,
+   "file": "/home/claude/reel-kit/assets/sfx/pop.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 36.08,
+   "dur": 0.72,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "ding",
+   "t": 36.95,
+   "dur": 0.9,
+   "vol": 0.32,
+   "file": "/home/claude/reel-kit/assets/sfx/ding.wav"
+  },
+  {
+   "kind": "typing",
+   "t": 36.98,
+   "dur": 0.52,
+   "vol": 0.72,
+   "file": "/home/claude/reel-kit/assets/sfx/typing.wav"
+  },
+  {
+   "kind": "enter",
+   "t": 37.62,
+   "dur": 0.18,
+   "vol": 0.56,
+   "file": "/home/claude/reel-kit/assets/sfx/enter.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 37.97,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "whoosh",
+   "t": 40.55,
+   "dur": 0.55,
+   "vol": 0.36,
+   "file": "/home/claude/reel-kit/assets/sfx/whoosh.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 40.8,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 40.87,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 40.94,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 41.01,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 41.08,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "tick",
+   "t": 41.15,
+   "dur": 0.05,
+   "vol": 0.24,
+   "file": "/home/claude/reel-kit/assets/sfx/tick.wav"
+  },
+  {
+   "kind": "ding",
+   "t": 41.9,
+   "dur": 0.9,
+   "vol": 0.32,
+   "file": "/home/claude/reel-kit/assets/sfx/ding.wav"
+  },
+  {
+   "kind": "voice",
+   "t": 0.3,
+   "dur": null,
+   "vol": 0.8,
+   "file": "/home/claude/reel-kit/out/python-tuples/assets/voice/00.wav"
+  },
+  {
+   "kind": "voice",
+   "t": 4.8,
+   "dur": null,
+   "vol": 0.8,
+   "file": "/home/claude/reel-kit/out/python-tuples/assets/voice/01.wav"
+  },
+  {
+   "kind": "voice",
+   "t": 10.8,
+   "dur": null,
+   "vol": 0.8,
+   "file": "/home/claude/reel-kit/out/python-tuples/assets/voice/02.wav"
+  },
+  {
+   "kind": "voice",
+   "t": 16.8,
+   "dur": null,
+   "vol": 0.8,
+   "file": "/home/claude/reel-kit/out/python-tuples/assets/voice/03.wav"
+  },
+  {
+   "kind": "voice",
+   "t": 22.8,
+   "dur": null,
+   "vol": 0.8,
+   "file": "/home/claude/reel-kit/out/python-tuples/assets/voice/04.wav"
+  },
+  {
+   "kind": "voice",
+   "t": 28.8,
+   "dur": null,
+   "vol": 0.8,
+   "file": "/home/claude/reel-kit/out/python-tuples/assets/voice/05.wav"
+  },
+  {
+   "kind": "voice",
+   "t": 34.8,
+   "dur": null,
+   "vol": 0.8,
+   "file": "/home/claude/reel-kit/out/python-tuples/assets/voice/06.wav"
+  },
+  {
+   "kind": "voice",
+   "t": 40.8,
+   "dur": null,
+   "vol": 0.8,
+   "file": "/home/claude/reel-kit/out/python-tuples/assets/voice/07.wav"
+  }
+ ]
+}
